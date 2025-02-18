@@ -1,7 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx}
 \graphicspath{{./images/}}
-\usepackage{hyperref}
 \usepackage{float}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -9,14 +8,16 @@
 \usepackage{amsmath}
 \usepackage[margin=15mm]{geometry}
 \usepackage[titletoc,toc,title]{appendix}
+\usepackage{hyperref}
 
 \title{CS3210 Lab 2}
 \author{Leow Li Yong}
 \date{17 February 2025}
 
 \begin{document}
+% \sffamily
 \captionsetup{justification=centering}
-% \maketitle
+\maketitle
 
 \section{Code Description}
 The program take in 2 integers as inputs. First input \textit{size} is used to generate 2 square matrices of size \textit{size} x \textit{size}. The matrices are then multiplied together to a new matrix and the time taken to do so is printed to stdout. OpenMP was used to parallelize the matrix multiplication algorithm and the number of threads used was set with the second integer input.  
@@ -83,14 +84,14 @@ In the multiplication of the 2 matrices $A \times B$, the elements in matrix $B$
 
 From figure \ref{fig:graphsRowWise}, we can see that performance significantly improves with row wise access during multiplication, especially at thread counts greater than the number of physical cores. With 2 threads, a matrix size of 1000, and execution on the XS-4114 processor, \texttt{perf stat -r 3 -e LLC-cache-loads,LLC-cache-misses,L1-dcache-loads,L1-dcache-load-misses} reports an L1-dcache miss rate of 39.19\% and 3.11\% for column-wise multiplication and row-wise multiplication respectively. This shows that row-wise multiplication has improved spatial locality, reducing the number of L1-cache misses, which could explain the improved performance of row-wise multiplication.
 
-The measurements above were repeated, adding the resource_stalls.any event. At 2 threads and a matrix size of 1000, both column-wise and row-wise multiplication had about 1.97 billion resource stalls. Increasing the number of threads to 16 resulted in 780 million and 12 billion resource stalls for row-wise and column-wise multiplication respectively. This explains the further increased performance of row-wise multiplication at higher thread counts.
+The measurements above were repeated, adding the \texttt{resource\_stalls.any} event. At 2 threads and a matrix size of 1000, both column-wise and row-wise multiplication had about 1.97 billion resource stalls. Increasing the number of threads to 16 resulted in 780 million and 12 billion resource stalls for row-wise and column-wise multiplication respectively. This explains the further increased performance of row-wise multiplication at higher thread counts.
 
 \newpage
 
 \begin{appendices}
 
 \section{Reproduction}
-Experiments used Slurm nodes \texttt{soctf-pdc-005} (XS-4114) and \texttt{soctf-pdf-013} (i7-7700). Code was compiled with \texttt{g++ 12.3.0} using flags \texttt{-O3 -fopenmp -g}. Execution was managed via \texttt{srun/sbatch}, with metrics collected using \texttt{perf 5.15.168}. Raw data, scripts, source code, and figures are available at \url{https://github.com/ginloy/cs3210-lab2}.
+Experiments used Slurm nodes \texttt{soctf-pdc-005} (XS-4114) and \texttt{soctf-pdf-013} (i7-7700). Code was compiled with \texttt{g++ 12.3.0} using flags \texttt{-O3 -fopenmp -g}. Execution was managed via \texttt{srun/sbatch}, with metrics collected using \texttt{perf 5.15.168}. Raw data, scripts, source code, and figures are available at \url{https://github.com/ginloy/CS3210-labs/tree/main/L2}. Script outputs are in .slurmlog files, raw data is in csv files, processed data is in the excel file, source code for column-wise and row-wise multiplication are in mm-omp.cpp and mm-omp-rows.cpp respectively.
 
 \end{appendices}
 
