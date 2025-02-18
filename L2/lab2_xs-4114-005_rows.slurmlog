@@ -1,0 +1,721 @@
+Running job: lab2-mmomp!
+We are running on soctf-pdc-005.d1.comp.nus.edu.sg
+Job started at Tue Feb 18 09:42:29 PM +08 2025
+Arguments to your executable: 1500 10000
+Compiling...
+Running...
+THREADS: 1
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 1 threads
+Matrix multiplication took 4.59 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 1':
+
+    13,712,951,269      cycles                                                      
+    24,030,158,641      instructions              #    1.75  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       4.715504894 seconds time elapsed
+
+       4.691096000 seconds user
+       0.024015000 seconds sys
+
+
+THREADS: 1
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 1 threads
+Matrix multiplication took 4.57 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 1':
+
+    13,707,431,805      cycles                                                      
+    24,030,035,738      instructions              #    1.75  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       4.695691988 seconds time elapsed
+
+       4.677187000 seconds user
+       0.016004000 seconds sys
+
+
+THREADS: 1
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 1 threads
+Matrix multiplication took 4.58 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 1':
+
+    13,711,550,692      cycles                                                      
+    24,030,119,004      instructions              #    1.75  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       4.706201624 seconds time elapsed
+
+       4.676256000 seconds user
+       0.028001000 seconds sys
+
+
+THREADS: 2
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 2 threads
+Matrix multiplication took 2.38 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 2':
+
+    13,813,149,863      cycles                                                      
+    24,034,894,639      instructions              #    1.74  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       2.488312964 seconds time elapsed
+
+       4.883136000 seconds user
+       0.019980000 seconds sys
+
+
+THREADS: 2
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 2 threads
+Matrix multiplication took 2.39 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 2':
+
+    13,810,996,685      cycles                                                      
+    24,035,332,050      instructions              #    1.74  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       2.522341245 seconds time elapsed
+
+       4.899885000 seconds user
+       0.039966000 seconds sys
+
+
+THREADS: 2
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 2 threads
+Matrix multiplication took 2.40 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 2':
+
+    13,841,098,608      cycles                                                      
+    24,035,394,852      instructions              #    1.74  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       2.527197456 seconds time elapsed
+
+       4.921180000 seconds user
+       0.036008000 seconds sys
+
+
+THREADS: 4
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 4 threads
+Matrix multiplication took 1.26 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 4':
+
+    13,959,039,946      cycles                                                      
+    24,042,710,312      instructions              #    1.72  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       1.378900710 seconds time elapsed
+
+       5.217678000 seconds user
+       0.023952000 seconds sys
+
+
+THREADS: 4
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 4 threads
+Matrix multiplication took 1.25 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 4':
+
+    13,937,736,220      cycles                                                      
+    24,041,808,352      instructions              #    1.72  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       1.376249717 seconds time elapsed
+
+       5.214662000 seconds user
+       0.024030000 seconds sys
+
+
+THREADS: 4
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 4 threads
+Matrix multiplication took 1.25 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 4':
+
+    14,011,291,552      cycles                                                      
+    24,041,964,101      instructions              #    1.72  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       1.397533865 seconds time elapsed
+
+       5.222200000 seconds user
+       0.023991000 seconds sys
+
+
+THREADS: 8
+Matrix multiplication took 0.67 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 8 threads
+
+ Performance counter stats for './mm-omp-rows 1500 8':
+
+    14,236,060,797      cycles                                                      
+    24,057,864,550      instructions              #    1.69  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.794572017 seconds time elapsed
+
+       5.728323000 seconds user
+       0.028060000 seconds sys
+
+
+THREADS: 8
+Matrix multiplication took 0.67 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 8 threads
+
+ Performance counter stats for './mm-omp-rows 1500 8':
+
+    14,244,697,559      cycles                                                      
+    24,057,672,858      instructions              #    1.69  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.792459244 seconds time elapsed
+
+       5.690607000 seconds user
+       0.023926000 seconds sys
+
+
+THREADS: 8
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 8 threads
+Matrix multiplication took 0.67 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 8':
+
+    14,244,632,762      cycles                                                      
+    24,058,521,620      instructions              #    1.69  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.779222918 seconds time elapsed
+
+       5.714994000 seconds user
+       0.019996000 seconds sys
+
+
+THREADS: 16
+Matrix multiplication took 0.38 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 16 threads
+
+ Performance counter stats for './mm-omp-rows 1500 16':
+
+    15,047,013,651      cycles                                                      
+    24,086,348,876      instructions              #    1.60  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.502539600 seconds time elapsed
+
+       6.606717000 seconds user
+       0.051958000 seconds sys
+
+
+THREADS: 16
+Matrix multiplication took 0.37 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 16 threads
+
+ Performance counter stats for './mm-omp-rows 1500 16':
+
+    15,027,456,079      cycles                                                      
+    24,085,951,350      instructions              #    1.60  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.491227892 seconds time elapsed
+
+       6.507964000 seconds user
+       0.028017000 seconds sys
+
+
+THREADS: 16
+Matrix multiplication took 0.37 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 16 threads
+
+ Performance counter stats for './mm-omp-rows 1500 16':
+
+    15,041,763,780      cycles                                                      
+    24,086,855,939      instructions              #    1.60  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.491342420 seconds time elapsed
+
+       6.418368000 seconds user
+       0.031932000 seconds sys
+
+
+THREADS: 32
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 32 threads
+Matrix multiplication took 0.32 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 32':
+
+    14,192,268,806      cycles                                                      
+    24,045,663,121      instructions              #    1.69  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.450964211 seconds time elapsed
+
+       5.991757000 seconds user
+       0.039838000 seconds sys
+
+
+THREADS: 32
+Matrix multiplication took 0.32 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 32 threads
+
+ Performance counter stats for './mm-omp-rows 1500 32':
+
+    14,189,926,129      cycles                                                      
+    24,045,208,271      instructions              #    1.69  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.445374537 seconds time elapsed
+
+       5.915139000 seconds user
+       0.039752000 seconds sys
+
+
+THREADS: 32
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 32 threads
+Matrix multiplication took 0.32 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 32':
+
+    14,184,098,223      cycles                                                      
+    24,044,632,655      instructions              #    1.70  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.441858770 seconds time elapsed
+
+       5.981631000 seconds user
+       0.036130000 seconds sys
+
+
+THREADS: 64
+Matrix multiplication took 0.31 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 64 threads
+
+ Performance counter stats for './mm-omp-rows 1500 64':
+
+    14,239,271,979      cycles                                                      
+    24,051,288,487      instructions              #    1.69  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.439980496 seconds time elapsed
+
+       5.973145000 seconds user
+       0.048138000 seconds sys
+
+
+THREADS: 64
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 64 threads
+Matrix multiplication took 0.31 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 64':
+
+    14,215,997,274      cycles                                                      
+    24,050,849,894      instructions              #    1.69  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.439294538 seconds time elapsed
+
+       5.970938000 seconds user
+       0.055990000 seconds sys
+
+
+THREADS: 64
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 64 threads
+Matrix multiplication took 0.31 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 64':
+
+    14,218,090,306      cycles                                                      
+    24,051,155,664      instructions              #    1.69  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.420969355 seconds time elapsed
+
+       5.960897000 seconds user
+       0.024084000 seconds sys
+
+
+THREADS: 128
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 128 threads
+Matrix multiplication took 0.30 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 128':
+
+    14,264,357,127      cycles                                                      
+    24,061,945,450      instructions              #    1.69  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.429790437 seconds time elapsed
+
+       5.950850000 seconds user
+       0.028164000 seconds sys
+
+
+THREADS: 128
+Matrix multiplication took 0.31 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 128 threads
+
+ Performance counter stats for './mm-omp-rows 1500 128':
+
+    14,249,489,332      cycles                                                      
+    24,061,542,374      instructions              #    1.69  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.439331524 seconds time elapsed
+
+       6.041955000 seconds user
+       0.051913000 seconds sys
+
+
+THREADS: 128
+Matrix multiplication took 0.30 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 128 threads
+
+ Performance counter stats for './mm-omp-rows 1500 128':
+
+    14,262,761,268      cycles                                                      
+    24,061,392,958      instructions              #    1.69  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.440667793 seconds time elapsed
+
+       5.931541000 seconds user
+       0.071656000 seconds sys
+
+
+THREADS: 256
+Matrix multiplication took 0.30 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 256 threads
+
+ Performance counter stats for './mm-omp-rows 1500 256':
+
+    14,325,859,029      cycles                                                      
+    24,081,009,798      instructions              #    1.68  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.459461973 seconds time elapsed
+
+       5.957447000 seconds user
+       0.136033000 seconds sys
+
+
+THREADS: 256
+Matrix multiplication took 0.31 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 256 threads
+
+ Performance counter stats for './mm-omp-rows 1500 256':
+
+    14,314,220,826      cycles                                                      
+    24,081,302,763      instructions              #    1.68  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.435757060 seconds time elapsed
+
+       6.028644000 seconds user
+       0.060206000 seconds sys
+
+
+THREADS: 256
+Matrix multiplication took 0.30 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 256 threads
+
+ Performance counter stats for './mm-omp-rows 1500 256':
+
+    14,306,319,133      cycles                                                      
+    24,081,079,249      instructions              #    1.68  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.440707823 seconds time elapsed
+
+       6.031337000 seconds user
+       0.072183000 seconds sys
+
+
+THREADS: 512
+Matrix multiplication took 0.30 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 512 threads
+
+ Performance counter stats for './mm-omp-rows 1500 512':
+
+    14,402,724,146      cycles                                                      
+    24,114,780,997      instructions              #    1.67  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.445086227 seconds time elapsed
+
+       5.974318000 seconds user
+       0.120449000 seconds sys
+
+
+THREADS: 512
+Matrix multiplication took 0.30 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 512 threads
+
+ Performance counter stats for './mm-omp-rows 1500 512':
+
+    14,392,742,657      cycles                                                      
+    24,115,579,844      instructions              #    1.68  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.466607358 seconds time elapsed
+
+       5.986023000 seconds user
+       0.139673000 seconds sys
+
+
+THREADS: 512
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 512 threads
+Matrix multiplication took 0.30 seconds
+
+ Performance counter stats for './mm-omp-rows 1500 512':
+
+    14,353,491,755      cycles                                                      
+    24,111,327,764      instructions              #    1.68  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.441467721 seconds time elapsed
+
+       5.949285000 seconds user
+       0.140124000 seconds sys
+
+
+THREADS: 1024
+Matrix multiplication took 0.30 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 1024 threads
+
+ Performance counter stats for './mm-omp-rows 1500 1024':
+
+    14,552,554,401      cycles                                                      
+    24,178,305,649      instructions              #    1.66  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.480032989 seconds time elapsed
+
+       6.102563000 seconds user
+       0.169403000 seconds sys
+
+
+THREADS: 1024
+Matrix multiplication took 0.31 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 1024 threads
+
+ Performance counter stats for './mm-omp-rows 1500 1024':
+
+    14,602,871,561      cycles                                                      
+    24,180,279,952      instructions              #    1.66  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.469363296 seconds time elapsed
+
+       6.024217000 seconds user
+       0.226953000 seconds sys
+
+
+THREADS: 1024
+Matrix multiplication took 0.30 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 1024 threads
+
+ Performance counter stats for './mm-omp-rows 1500 1024':
+
+    14,562,550,837      cycles                                                      
+    24,177,841,610      instructions              #    1.66  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.482068449 seconds time elapsed
+
+       6.078710000 seconds user
+       0.208642000 seconds sys
+
+
+THREADS: 2048
+Matrix multiplication took 0.30 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 2048 threads
+
+ Performance counter stats for './mm-omp-rows 1500 2048':
+
+    14,954,754,067      cycles                                                      
+    24,304,995,788      instructions              #    1.63  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.513062327 seconds time elapsed
+
+       6.138426000 seconds user
+       0.340578000 seconds sys
+
+
+THREADS: 2048
+Matrix multiplication took 0.30 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 2048 threads
+
+ Performance counter stats for './mm-omp-rows 1500 2048':
+
+    14,964,938,805      cycles                                                      
+    24,307,488,325      instructions              #    1.62  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.511771163 seconds time elapsed
+
+       6.154666000 seconds user
+       0.295743000 seconds sys
+
+
+THREADS: 2048
+Matrix multiplication took 0.32 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 2048 threads
+
+ Performance counter stats for './mm-omp-rows 1500 2048':
+
+    14,977,917,754      cycles                                                      
+    24,306,326,119      instructions              #    1.62  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.522008944 seconds time elapsed
+
+       6.311639000 seconds user
+       0.382765000 seconds sys
+
+
+THREADS: 4096
+Matrix multiplication took 0.31 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 4096 threads
+
+ Performance counter stats for './mm-omp-rows 1500 4096':
+
+    15,558,755,350      cycles                                                      
+    24,546,429,190      instructions              #    1.58  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.591176698 seconds time elapsed
+
+       6.263849000 seconds user
+       0.574530000 seconds sys
+
+
+THREADS: 4096
+Matrix multiplication took 0.31 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 4096 threads
+
+ Performance counter stats for './mm-omp-rows 1500 4096':
+
+    15,721,850,172      cycles                                                      
+    24,562,721,279      instructions              #    1.56  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.599933099 seconds time elapsed
+
+       6.439543000 seconds user
+       0.568558000 seconds sys
+
+
+THREADS: 4096
+Matrix multiplication took 0.31 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 4096 threads
+
+ Performance counter stats for './mm-omp-rows 1500 4096':
+
+    15,731,570,746      cycles                                                      
+    24,559,807,646      instructions              #    1.56  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.590693019 seconds time elapsed
+
+       6.350524000 seconds user
+       0.536948000 seconds sys
+
+
+THREADS: 8192
+Matrix multiplication took 0.32 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 8192 threads
+
+ Performance counter stats for './mm-omp-rows 1500 8192':
+
+    17,330,774,030      cycles                                                      
+    25,079,762,750      instructions              #    1.45  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.758544121 seconds time elapsed
+
+       6.723237000 seconds user
+       1.048539000 seconds sys
+
+
+THREADS: 8192
+Matrix multiplication took 0.33 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 8192 threads
+
+ Performance counter stats for './mm-omp-rows 1500 8192':
+
+    17,341,268,689      cycles                                                      
+    25,081,180,387      instructions              #    1.45  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.768333571 seconds time elapsed
+
+       6.712246000 seconds user
+       1.088247000 seconds sys
+
+
+THREADS: 8192
+Matrix multiplication took 0.31 seconds
+Usage: ./mm-omp-rows <size> <threads>
+Matrix multiplication of size 1500 using 8192 threads
+
+ Performance counter stats for './mm-omp-rows 1500 8192':
+
+    16,825,573,678      cycles                                                      
+    25,011,215,058      instructions              #    1.49  insn per cycle         
+     6,750,000,001      fp_arith_inst_retired.scalar_single                                   
+
+       0.739906661 seconds time elapsed
+
+       6.597303000 seconds user
+       0.963110000 seconds sys
+
+
+Job ended at Tue Feb 18 09:43:24 PM +08 2025
