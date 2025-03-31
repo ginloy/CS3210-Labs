@@ -11,6 +11,10 @@ mkfifo "$STDERR_PIPE" "$STDOUT_PIPE"
 >&2 mpic++ -o "$EXE" ./mm-mpi.cpp
 
 format_output() {
+  if [[ $# -ne 3 ]]; then
+    >&2 echo "3 arguments needed, received $#"
+    return 1
+  fi
   local stdout
   local stderr
   local workers
