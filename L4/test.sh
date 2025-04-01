@@ -50,7 +50,7 @@ echo 'test_type,partition,run,worker,node,communication_time,computation_time,to
 format_output "srun -p i7-7700 -N 1 -n 5 --cpu-bind=thread $EXE" A i7-7700 &
 format_output "srun -p xs-4114 -N 1 -n 5 --cpu-bind=thread $EXE" A xs-4114 &
 format_output "srun --constraint='[i7-7700*1&xs-4114*1]' --distribution=cyclic -N 2 -n 5 --cpu-bind=thread $EXE" A both &
-format_output "srun -n5 -N1 -p i7-7700 $EXE 256" B i7-7700 &
-format_output "srun -n9 -N1 --overcommit -p i7-7700 $EXE 256" B i7-7700 &
+format_output "srun -n5 -N1 -p i7-7700 $EXE 256" Bn5 i7-7700 &
+format_output "srun -n9 -N1 --overcommit -p i7-7700 $EXE 256" Bn9 i7-7700 &
 
 wait
