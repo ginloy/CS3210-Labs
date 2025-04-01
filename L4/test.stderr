@@ -1,0 +1,1210 @@
+srun: job 678918 queued and waiting for resources
+srun: job 678918 has been allocated resources
+ --- Process 1 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-005.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ --- Process 0 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ --- WORKER 1: Received row [512-1023] of matrix A
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 3: Finished the computations
+ --- WORKER 2: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.34 seconds; computation_time= 41.64 seconds
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.34 seconds; computation_time= 41.68 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.50 seconds; computation_time= 41.52 seconds
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.52 seconds; computation_time= 41.51 seconds
+ --- MASTER 4 (on soctf-pdc-005.d1.comp.nus.edu.sg): total time= 42.04 seconds
+srun: job 678923 queued and waiting for resources
+srun: job 678923 has been allocated resources
+ --- Process 3 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 0 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-005.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ --- WORKER 1: Received row [512-1023] of matrix A
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 3: Finished the computations
+ --- WORKER 2: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.34 seconds; computation_time= 41.64 seconds
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.34 seconds; computation_time= 41.68 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.39 seconds; computation_time= 41.63 seconds
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.45 seconds; computation_time= 41.58 seconds
+ --- MASTER 4 (on soctf-pdc-005.d1.comp.nus.edu.sg): total time= 42.03 seconds
+srun: job 678924 queued and waiting for resources
+srun: job 678924 has been allocated resources
+ --- Process 0 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-005.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ --- Process 2 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ --- WORKER 1: Received row [512-1023] of matrix A
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 1: Finished the computations
+ --- WORKER 2: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.33 seconds; computation_time= 41.57 seconds
+ --- WORKER 3: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.37 seconds; computation_time= 41.54 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.36 seconds; computation_time= 41.56 seconds
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.34 seconds; computation_time= 41.58 seconds
+ --- MASTER 4 (on soctf-pdc-005.d1.comp.nus.edu.sg): total time= 41.92 seconds
+srun: job 678926 queued and waiting for resources
+srun: job 678926 has been allocated resources
+ --- Process 0 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-005.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ --- WORKER 1: Received row [512-1023] of matrix A
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 3: Finished the computations
+ --- WORKER 2: Finished the computations
+ --- WORKER 1: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.34 seconds; computation_time= 41.55 seconds
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.36 seconds; computation_time= 41.53 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.45 seconds; computation_time= 41.45 seconds
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.50 seconds; computation_time= 41.41 seconds
+ --- MASTER 4 (on soctf-pdc-005.d1.comp.nus.edu.sg): total time= 41.91 seconds
+srun: job 678928 queued and waiting for resources
+srun: job 678928 has been allocated resources
+ --- Process 0 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-005.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ --- Process 2 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ --- WORKER 1: Received row [512-1023] of matrix A
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 1: Finished the computations
+ --- WORKER 2: Finished the computations
+ --- WORKER 3: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.33 seconds; computation_time= 41.53 seconds
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.41 seconds; computation_time= 41.46 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.39 seconds; computation_time= 41.48 seconds
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.38 seconds; computation_time= 41.51 seconds
+ --- MASTER 4 (on soctf-pdc-005.d1.comp.nus.edu.sg): total time= 41.88 seconds
+srun: job 678919 queued and waiting for resources
+srun: job 678919 has been allocated resources
+ --- Process 4 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 7 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 5 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 0 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 8 (on soctf-pdc-012.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 256 x 256
+ +++ MASTER : Distributing matrix A to workers: workers 8, rows_per_worker 32 
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 6 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- WORKER 0: Received row [0-31] of matrix A
+ +++ MASTER : Finished sending row [0-31] of matrix A to process 0
+ --- WORKER 0: Receiving all 256 rows for matrix B...
+ --- WORKER 1: Received row [32-63] of matrix A
+ +++ MASTER : Finished sending row [32-63] of matrix A to process 1
+ --- WORKER 1: Receiving all 256 rows for matrix B...
+ --- WORKER 2: Received row [64-95] of matrix A
+ +++ MASTER : Finished sending row [64-95] of matrix A to process 2
+ --- WORKER 2: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Received row [96-127] of matrix A
+ --- WORKER 3: Receiving all 256 rows for matrix B...
+ +++ MASTER : Finished sending row [96-127] of matrix A to process 3
+ --- WORKER 4: Received row [128-159] of matrix A
+ +++ MASTER : Finished sending row [128-159] of matrix A to process 4
+ --- WORKER 4: Receiving all 256 rows for matrix B...
+ --- WORKER 5: Received row [160-191] of matrix A
+ +++ MASTER : Finished sending row [160-191] of matrix A to process 5
+ --- WORKER 5: Receiving all 256 rows for matrix B...
+ --- WORKER 6: Received row [192-223] of matrix A
+ +++ MASTER : Finished sending row [192-223] of matrix A to process 6
+ --- WORKER 6: Receiving all 256 rows for matrix B...
+ --- WORKER 7: Received row [224-255] of matrix A
+ +++ MASTER : Finished sending row [224-255] of matrix A to process 7
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 7: Receiving all 256 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ --- WORKER 4: Received matrix B
+ --- WORKER 5: Received matrix B
+ --- WORKER 6: Received matrix B
+ --- WORKER 0: Finished the computations
+ --- WORKER 7: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 2: Finished the computations
+ --- WORKER 5: Finished the computations
+ --- WORKER 1: Finished the computations
+ --- WORKER 3: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.65 seconds; computation_time=  0.06 seconds
+ --- WORKER 4: Finished the computations
+ --- WORKER 6: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.65 seconds; computation_time=  0.07 seconds
+ --- WORKER 4: Sent the results back
+ --- WORKER 4 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.67 seconds; computation_time=  0.07 seconds
+ --- WORKER 7: Finished the computations
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.68 seconds; computation_time=  0.06 seconds
+ --- WORKER 5: Sent the results back
+ --- WORKER 5 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.70 seconds; computation_time=  0.05 seconds
+ --- WORKER 6: Sent the results back
+ --- WORKER 6 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.68 seconds; computation_time=  0.05 seconds
+ --- WORKER 7: Sent the results back
+ --- WORKER 7 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.69 seconds; computation_time=  0.05 seconds
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.68 seconds; computation_time=  0.06 seconds
+ --- MASTER 8 (on soctf-pdc-012.d1.comp.nus.edu.sg): total time= 28.74 seconds
+srun: job 678930 queued and waiting for resources
+srun: job 678930 has been allocated resources
+ --- Process 4 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 5 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 8 (on soctf-pdc-012.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 256 x 256
+ --- Process 0 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 8, rows_per_worker 32 
+ --- WORKER 0: Received row [0-31] of matrix A
+ +++ MASTER : Finished sending row [0-31] of matrix A to process 0
+ --- WORKER 0: Receiving all 256 rows for matrix B...
+ --- Process 6 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 7 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- WORKER 1: Received row [32-63] of matrix A
+ +++ MASTER : Finished sending row [32-63] of matrix A to process 1
+ --- WORKER 1: Receiving all 256 rows for matrix B...
+ --- WORKER 2: Received row [64-95] of matrix A
+ +++ MASTER : Finished sending row [64-95] of matrix A to process 2
+ --- WORKER 2: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Received row [96-127] of matrix A
+ +++ MASTER : Finished sending row [96-127] of matrix A to process 3
+ --- WORKER 3: Receiving all 256 rows for matrix B...
+ --- WORKER 4: Received row [128-159] of matrix A
+ +++ MASTER : Finished sending row [128-159] of matrix A to process 4
+ --- WORKER 4: Receiving all 256 rows for matrix B...
+ --- WORKER 5: Received row [160-191] of matrix A
+ +++ MASTER : Finished sending row [160-191] of matrix A to process 5
+ --- WORKER 5: Receiving all 256 rows for matrix B...
+ --- WORKER 6: Received row [192-223] of matrix A
+ +++ MASTER : Finished sending row [192-223] of matrix A to process 6
+ --- WORKER 6: Receiving all 256 rows for matrix B...
+ --- WORKER 7: Received row [224-255] of matrix A
+ +++ MASTER : Finished sending row [224-255] of matrix A to process 7
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 7: Receiving all 256 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ --- WORKER 4: Received matrix B
+ --- WORKER 5: Received matrix B
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 27.76 seconds; computation_time=  0.06 seconds
+ --- WORKER 0: Finished the computations
+ --- WORKER 2: Finished the computations
+ --- WORKER 6: Received matrix B
+ --- WORKER 3: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 27.80 seconds; computation_time=  0.07 seconds
+ --- WORKER 7: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 4: Finished the computations
+ --- WORKER 4: Sent the results back
+ --- WORKER 4 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 27.81 seconds; computation_time=  0.06 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 27.83 seconds; computation_time=  0.05 seconds
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 27.81 seconds; computation_time=  0.07 seconds
+ --- WORKER 6: Finished the computations
+ --- WORKER 6: Sent the results back
+ --- WORKER 6 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 27.84 seconds; computation_time=  0.04 seconds
+ --- WORKER 5: Finished the computations
+ --- WORKER 7: Finished the computations
+ --- WORKER 7: Sent the results back
+ --- WORKER 7 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 27.85 seconds; computation_time=  0.03 seconds
+ --- WORKER 5: Sent the results back
+ --- WORKER 5 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 27.83 seconds; computation_time=  0.06 seconds
+ --- MASTER 8 (on soctf-pdc-012.d1.comp.nus.edu.sg): total time= 27.89 seconds
+srun: job 678932 queued and waiting for resources
+srun: job 678932 has been allocated resources
+ --- Process 2 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 6 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 4 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 8 (on soctf-pdc-012.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 256 x 256
+ +++ MASTER : Distributing matrix A to workers: workers 8, rows_per_worker 32 
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 0 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 5 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 7 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- WORKER 0: Received row [0-31] of matrix A
+ +++ MASTER : Finished sending row [0-31] of matrix A to process 0
+ --- WORKER 0: Receiving all 256 rows for matrix B...
+ --- WORKER 1: Received row [32-63] of matrix A
+ +++ MASTER : Finished sending row [32-63] of matrix A to process 1
+ --- WORKER 1: Receiving all 256 rows for matrix B...
+ --- WORKER 2: Received row [64-95] of matrix A
+ +++ MASTER : Finished sending row [64-95] of matrix A to process 2
+ --- WORKER 2: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Received row [96-127] of matrix A
+ +++ MASTER : Finished sending row [96-127] of matrix A to process 3
+ --- WORKER 3: Receiving all 256 rows for matrix B...
+ --- WORKER 4: Received row [128-159] of matrix A
+ +++ MASTER : Finished sending row [128-159] of matrix A to process 4
+ --- WORKER 4: Receiving all 256 rows for matrix B...
+ --- WORKER 5: Received row [160-191] of matrix A
+ +++ MASTER : Finished sending row [160-191] of matrix A to process 5
+ --- WORKER 5: Receiving all 256 rows for matrix B...
+ --- WORKER 6: Received row [192-223] of matrix A
+ +++ MASTER : Finished sending row [192-223] of matrix A to process 6
+ --- WORKER 6: Receiving all 256 rows for matrix B...
+ --- WORKER 7: Received row [224-255] of matrix A
+ +++ MASTER : Finished sending row [224-255] of matrix A to process 7
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 7: Receiving all 256 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ --- WORKER 4: Received matrix B
+ --- WORKER 5: Received matrix B
+ --- WORKER 2: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.11 seconds; computation_time=  0.07 seconds
+ --- WORKER 6: Received matrix B
+ --- WORKER 3: Finished the computations
+ --- WORKER 1: Finished the computations
+ --- WORKER 7: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 4: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.16 seconds; computation_time=  0.06 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.16 seconds; computation_time=  0.06 seconds
+ --- WORKER 4: Sent the results back
+ --- WORKER 4 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.16 seconds; computation_time=  0.05 seconds
+ --- WORKER 7: Finished the computations
+ --- WORKER 5: Finished the computations
+ --- WORKER 7: Sent the results back
+ --- WORKER 7 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.20 seconds; computation_time=  0.03 seconds
+ --- WORKER 5: Sent the results back
+ --- WORKER 5 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.17 seconds; computation_time=  0.06 seconds
+ --- WORKER 6: Finished the computations
+ --- WORKER 6: Sent the results back
+ --- WORKER 6 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.19 seconds; computation_time=  0.05 seconds
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time= 28.17 seconds; computation_time=  0.07 seconds
+ --- MASTER 8 (on soctf-pdc-012.d1.comp.nus.edu.sg): total time= 28.24 seconds
+srun: job 678933 queued and waiting for resources
+srun: job 678933 has been allocated resources
+ --- Process 1 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 5 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 4 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 6 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 7 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 0 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 8 (on soctf-pdc-014.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 256 x 256
+ +++ MASTER : Distributing matrix A to workers: workers 8, rows_per_worker 32 
+ --- WORKER 0: Received row [0-31] of matrix A
+ +++ MASTER : Finished sending row [0-31] of matrix A to process 0
+ --- WORKER 0: Receiving all 256 rows for matrix B...
+ --- Process 2 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- WORKER 1: Received row [32-63] of matrix A
+ +++ MASTER : Finished sending row [32-63] of matrix A to process 1
+ --- WORKER 1: Receiving all 256 rows for matrix B...
+ --- WORKER 2: Received row [64-95] of matrix A
+ +++ MASTER : Finished sending row [64-95] of matrix A to process 2
+ --- WORKER 2: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Received row [96-127] of matrix A
+ +++ MASTER : Finished sending row [96-127] of matrix A to process 3
+ --- WORKER 3: Receiving all 256 rows for matrix B...
+ --- WORKER 4: Received row [128-159] of matrix A
+ +++ MASTER : Finished sending row [128-159] of matrix A to process 4
+ --- WORKER 4: Receiving all 256 rows for matrix B...
+ --- WORKER 5: Received row [160-191] of matrix A
+ +++ MASTER : Finished sending row [160-191] of matrix A to process 5
+ --- WORKER 5: Receiving all 256 rows for matrix B...
+ --- WORKER 6: Received row [192-223] of matrix A
+ +++ MASTER : Finished sending row [192-223] of matrix A to process 6
+ --- WORKER 6: Receiving all 256 rows for matrix B...
+ --- WORKER 7: Received row [224-255] of matrix A
+ +++ MASTER : Finished sending row [224-255] of matrix A to process 7
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 7: Receiving all 256 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ --- WORKER 0: Finished the computations
+ --- WORKER 4: Received matrix B
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.51 seconds; computation_time=  0.06 seconds
+ --- WORKER 5: Received matrix B
+ --- WORKER 1: Finished the computations
+ --- WORKER 6: Received matrix B
+ --- WORKER 2: Finished the computations
+ --- WORKER 7: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 3: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.56 seconds; computation_time=  0.06 seconds
+ --- WORKER 4: Finished the computations
+ --- WORKER 5: Finished the computations
+ --- WORKER 4: Sent the results back
+ --- WORKER 4 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.58 seconds; computation_time=  0.05 seconds
+ --- WORKER 6: Finished the computations
+ --- WORKER 7: Finished the computations
+ --- WORKER 6: Sent the results back
+ --- WORKER 6 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.59 seconds; computation_time=  0.05 seconds
+ --- WORKER 7: Sent the results back
+ --- WORKER 7 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.60 seconds; computation_time=  0.05 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.57 seconds; computation_time=  0.06 seconds
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.60 seconds; computation_time=  0.05 seconds
+ --- WORKER 5: Sent the results back
+ --- WORKER 5 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.59 seconds; computation_time=  0.06 seconds
+ --- MASTER 8 (on soctf-pdc-014.d1.comp.nus.edu.sg): total time= 28.64 seconds
+srun: job 678935 queued and waiting for resources
+srun: job 678935 has been allocated resources
+ --- Process 0 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 6 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 5 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 4 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 8 (on soctf-pdc-014.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 256 x 256
+ +++ MASTER : Distributing matrix A to workers: workers 8, rows_per_worker 32 
+ --- Process 7 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- WORKER 0: Received row [0-31] of matrix A
+ +++ MASTER : Finished sending row [0-31] of matrix A to process 0
+ --- WORKER 0: Receiving all 256 rows for matrix B...
+ --- WORKER 1: Received row [32-63] of matrix A
+ +++ MASTER : Finished sending row [32-63] of matrix A to process 1
+ --- WORKER 1: Receiving all 256 rows for matrix B...
+ --- WORKER 2: Received row [64-95] of matrix A
+ +++ MASTER : Finished sending row [64-95] of matrix A to process 2
+ --- WORKER 2: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Received row [96-127] of matrix A
+ +++ MASTER : Finished sending row [96-127] of matrix A to process 3
+ --- WORKER 3: Receiving all 256 rows for matrix B...
+ --- WORKER 4: Received row [128-159] of matrix A
+ +++ MASTER : Finished sending row [128-159] of matrix A to process 4
+ --- WORKER 4: Receiving all 256 rows for matrix B...
+ --- WORKER 5: Received row [160-191] of matrix A
+ +++ MASTER : Finished sending row [160-191] of matrix A to process 5
+ --- WORKER 5: Receiving all 256 rows for matrix B...
+ --- WORKER 6: Received row [192-223] of matrix A
+ +++ MASTER : Finished sending row [192-223] of matrix A to process 6
+ --- WORKER 6: Receiving all 256 rows for matrix B...
+ --- WORKER 7: Received row [224-255] of matrix A
+ +++ MASTER : Finished sending row [224-255] of matrix A to process 7
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 7: Receiving all 256 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ --- WORKER 4: Received matrix B
+ --- WORKER 0: Finished the computations
+ --- WORKER 5: Received matrix B
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 27.96 seconds; computation_time=  0.07 seconds
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 27.97 seconds; computation_time=  0.06 seconds
+ --- WORKER 6: Received matrix B
+ --- WORKER 2: Finished the computations
+ --- WORKER 7: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 4: Finished the computations
+ --- WORKER 3: Finished the computations
+ --- WORKER 5: Finished the computations
+ --- WORKER 5: Sent the results back
+ --- WORKER 5 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.02 seconds; computation_time=  0.05 seconds
+ --- WORKER 6: Finished the computations
+ --- WORKER 6: Sent the results back
+ --- WORKER 6 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.04 seconds; computation_time=  0.05 seconds
+ --- WORKER 7: Finished the computations
+ --- WORKER 7: Sent the results back
+ --- WORKER 7 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.04 seconds; computation_time=  0.04 seconds
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.02 seconds; computation_time=  0.07 seconds
+ --- WORKER 4: Sent the results back
+ --- WORKER 4 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.03 seconds; computation_time=  0.05 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time= 28.03 seconds; computation_time=  0.06 seconds
+ --- MASTER 8 (on soctf-pdc-014.d1.comp.nus.edu.sg): total time= 28.08 seconds
+srun: job 678921 queued and waiting for resources
+srun: job 678921 has been allocated resources
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 0 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-012.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 256 x 256
+ --- Process 2 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 64 
+ --- WORKER 0: Received row [0-63] of matrix A
+ +++ MASTER : Finished sending row [0-63] of matrix A to process 0
+ --- WORKER 1: Received row [64-127] of matrix A
+ +++ MASTER : Finished sending row [64-127] of matrix A to process 1
+ --- WORKER 0: Receiving all 256 rows for matrix B...
+ --- WORKER 2: Received row [128-191] of matrix A
+ +++ MASTER : Finished sending row [128-191] of matrix A to process 2
+ --- WORKER 1: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Received row [192-255] of matrix A
+ +++ MASTER : Finished sending row [192-255] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 2: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Receiving all 256 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 3: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.01 seconds; computation_time=  0.02 seconds
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.01 seconds; computation_time=  0.03 seconds
+ --- WORKER 0: Finished the computations
+ --- WORKER 2: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.01 seconds; computation_time=  0.04 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.01 seconds; computation_time=  0.04 seconds
+ --- MASTER 4 (on soctf-pdc-012.d1.comp.nus.edu.sg): total time=  0.05 seconds
+srun: job 678922 queued and waiting for resources
+srun: job 678922 has been allocated resources
+ --- Process 0 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-012.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ --- WORKER 1: Received row [512-1023] of matrix A
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 3: Finished the computations
+ --- WORKER 2: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 1: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.22 seconds; computation_time= 32.90 seconds
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.22 seconds; computation_time= 32.90 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.49 seconds; computation_time= 32.64 seconds
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.51 seconds; computation_time= 32.62 seconds
+ --- MASTER 4 (on soctf-pdc-012.d1.comp.nus.edu.sg): total time= 33.14 seconds
+srun: job 678937 queued and waiting for resources
+srun: job 678937 has been allocated resources
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-012.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 256 x 256
+ --- Process 0 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 64 
+ --- WORKER 0: Received row [0-63] of matrix A
+ +++ MASTER : Finished sending row [0-63] of matrix A to process 0
+ --- WORKER 1: Received row [64-127] of matrix A
+ +++ MASTER : Finished sending row [64-127] of matrix A to process 1
+ --- WORKER 0: Receiving all 256 rows for matrix B...
+ --- WORKER 2: Received row [128-191] of matrix A
+ +++ MASTER : Finished sending row [128-191] of matrix A to process 2
+ --- WORKER 1: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Received row [192-255] of matrix A
+ +++ MASTER : Finished sending row [192-255] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 2: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Receiving all 256 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 3: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.00 seconds; computation_time=  0.02 seconds
+ --- WORKER 2: Finished the computations
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.00 seconds; computation_time=  0.03 seconds
+ --- WORKER 0: Finished the computations
+ --- WORKER 1: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.00 seconds; computation_time=  0.03 seconds
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.00 seconds; computation_time=  0.03 seconds
+ --- MASTER 4 (on soctf-pdc-012.d1.comp.nus.edu.sg): total time=  0.04 seconds
+srun: job 678939 queued and waiting for resources
+srun: job 678939 has been allocated resources
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-012.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ --- Process 0 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ --- WORKER 1: Received row [512-1023] of matrix A
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 3: Finished the computations
+ --- WORKER 2: Finished the computations
+ --- WORKER 1: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.23 seconds; computation_time= 33.02 seconds
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.28 seconds; computation_time= 32.98 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.55 seconds; computation_time= 32.72 seconds
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.63 seconds; computation_time= 32.64 seconds
+ --- MASTER 4 (on soctf-pdc-012.d1.comp.nus.edu.sg): total time= 33.27 seconds
+srun: job 678940 queued and waiting for resources
+srun: job 678940 has been allocated resources
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-012.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 256 x 256
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 0 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 64 
+ --- WORKER 0: Received row [0-63] of matrix A
+ +++ MASTER : Finished sending row [0-63] of matrix A to process 0
+ --- WORKER 1: Received row [64-127] of matrix A
+ +++ MASTER : Finished sending row [64-127] of matrix A to process 1
+ --- WORKER 0: Receiving all 256 rows for matrix B...
+ --- WORKER 2: Received row [128-191] of matrix A
+ +++ MASTER : Finished sending row [128-191] of matrix A to process 2
+ --- WORKER 1: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Received row [192-255] of matrix A
+ +++ MASTER : Finished sending row [192-255] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 2: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Receiving all 256 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 2: Finished the computations
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.01 seconds; computation_time=  0.02 seconds
+ --- WORKER 3: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.01 seconds; computation_time=  0.03 seconds
+ --- WORKER 1: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.01 seconds; computation_time=  0.04 seconds
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.01 seconds; computation_time=  0.04 seconds
+ --- MASTER 4 (on soctf-pdc-012.d1.comp.nus.edu.sg): total time=  0.04 seconds
+srun: job 678948 queued and waiting for resources
+srun: job 678948 has been allocated resources
+ --- Process 0 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-012.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ --- WORKER 1: Received row [512-1023] of matrix A
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 2: Finished the computations
+ --- WORKER 3: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.22 seconds; computation_time= 32.98 seconds
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.22 seconds; computation_time= 32.99 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.45 seconds; computation_time= 32.77 seconds
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.44 seconds; computation_time= 32.78 seconds
+ --- MASTER 4 (on soctf-pdc-012.d1.comp.nus.edu.sg): total time= 33.22 seconds
+srun: job 678949 queued and waiting for resources
+srun: job 678949 has been allocated resources
+ --- Process 0 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-012.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 256 x 256
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 64 
+ --- WORKER 0: Received row [0-63] of matrix A
+ +++ MASTER : Finished sending row [0-63] of matrix A to process 0
+ --- WORKER 1: Received row [64-127] of matrix A
+ +++ MASTER : Finished sending row [64-127] of matrix A to process 1
+ --- WORKER 0: Receiving all 256 rows for matrix B...
+ --- WORKER 2: Received row [128-191] of matrix A
+ +++ MASTER : Finished sending row [128-191] of matrix A to process 2
+ --- WORKER 1: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Received row [192-255] of matrix A
+ +++ MASTER : Finished sending row [192-255] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 2: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Receiving all 256 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.00 seconds; computation_time=  0.02 seconds
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.00 seconds; computation_time=  0.03 seconds
+ --- WORKER 3: Finished the computations
+ --- WORKER 2: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.00 seconds; computation_time=  0.03 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.00 seconds; computation_time=  0.03 seconds
+ --- MASTER 4 (on soctf-pdc-012.d1.comp.nus.edu.sg): total time=  0.04 seconds
+srun: job 678950 queued and waiting for resources
+srun: job 678950 has been allocated resources
+ --- Process 1 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-014.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ --- Process 2 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ --- Process 0 (on soctf-pdc-014.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ --- WORKER 1: Received row [512-1023] of matrix A
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 2: Finished the computations
+ --- WORKER 3: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time=  0.24 seconds; computation_time= 32.84 seconds
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time=  0.24 seconds; computation_time= 32.87 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time=  0.47 seconds; computation_time= 32.64 seconds
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-014.d1.comp.nus.edu.sg): communication_time=  0.44 seconds; computation_time= 32.67 seconds
+ --- MASTER 4 (on soctf-pdc-014.d1.comp.nus.edu.sg): total time= 33.11 seconds
+srun: job 678920 queued and waiting for resources
+srun: job 678920 has been allocated resources
+ --- Process 0 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-005.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Received row [512-1023] of matrix A
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 2: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 1: Received matrix B
+ --- WORKER 3: Received matrix B
+ --- WORKER 3: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.62 seconds; computation_time= 32.29 seconds
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.62 seconds; computation_time= 32.33 seconds
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.58 seconds; computation_time= 40.35 seconds
+ --- WORKER 2: Finished the computations
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.58 seconds; computation_time= 40.39 seconds
+ --- MASTER 4 (on soctf-pdc-005.d1.comp.nus.edu.sg): total time= 40.98 seconds
+srun: job 678951 queued and waiting for resources
+srun: job 678951 has been allocated resources
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-012.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 256 x 256
+ --- Process 0 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 64 
+ --- WORKER 0: Received row [0-63] of matrix A
+ +++ MASTER : Finished sending row [0-63] of matrix A to process 0
+ --- WORKER 1: Received row [64-127] of matrix A
+ +++ MASTER : Finished sending row [64-127] of matrix A to process 1
+ --- WORKER 0: Receiving all 256 rows for matrix B...
+ --- WORKER 2: Received row [128-191] of matrix A
+ +++ MASTER : Finished sending row [128-191] of matrix A to process 2
+ --- WORKER 1: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Received row [192-255] of matrix A
+ +++ MASTER : Finished sending row [192-255] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 2: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Receiving all 256 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 2: Finished the computations
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.00 seconds; computation_time=  0.02 seconds
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.00 seconds; computation_time=  0.03 seconds
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.00 seconds; computation_time=  0.03 seconds
+ --- WORKER 3: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.00 seconds; computation_time=  0.03 seconds
+ --- MASTER 4 (on soctf-pdc-012.d1.comp.nus.edu.sg): total time=  0.04 seconds
+srun: job 678953 queued and waiting for resources
+srun: job 678953 has been allocated resources
+ --- Process 2 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 0 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-012.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ --- WORKER 1: Received row [512-1023] of matrix A
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 2: Finished the computations
+ --- WORKER 3: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.22 seconds; computation_time= 32.92 seconds
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.22 seconds; computation_time= 32.93 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.46 seconds; computation_time= 32.69 seconds
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.44 seconds; computation_time= 32.72 seconds
+ --- MASTER 4 (on soctf-pdc-012.d1.comp.nus.edu.sg): total time= 33.16 seconds
+srun: job 678955 queued and waiting for resources
+srun: job 678955 has been allocated resources
+ --- Process 0 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-005.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Received row [512-1023] of matrix A
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 2: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 1: Received matrix B
+ --- WORKER 3: Received matrix B
+ --- WORKER 3: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.62 seconds; computation_time= 32.33 seconds
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.62 seconds; computation_time= 32.44 seconds
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.58 seconds; computation_time= 40.41 seconds
+ --- WORKER 2: Finished the computations
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.58 seconds; computation_time= 40.44 seconds
+ --- MASTER 4 (on soctf-pdc-005.d1.comp.nus.edu.sg): total time= 41.03 seconds
+srun: job 678957 queued and waiting for resources
+srun: job 678957 has been allocated resources
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-005.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ --- Process 0 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Received row [512-1023] of matrix A
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 2: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 1: Received matrix B
+ --- WORKER 3: Received matrix B
+ --- WORKER 3: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.64 seconds; computation_time= 32.29 seconds
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.64 seconds; computation_time= 32.34 seconds
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.60 seconds; computation_time= 40.45 seconds
+ --- WORKER 2: Finished the computations
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.60 seconds; computation_time= 40.48 seconds
+ --- MASTER 4 (on soctf-pdc-005.d1.comp.nus.edu.sg): total time= 41.09 seconds
+srun: job 678958 queued and waiting for resources
+srun: job 678958 has been allocated resources
+ --- Process 2 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-005.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ --- Process 0 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Received row [512-1023] of matrix A
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 2: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 1: Received matrix B
+ --- WORKER 3: Received matrix B
+ --- WORKER 3: Finished the computations
+ --- WORKER 1: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.66 seconds; computation_time= 32.25 seconds
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.67 seconds; computation_time= 32.26 seconds
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.61 seconds; computation_time= 40.24 seconds
+ --- WORKER 2: Finished the computations
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.61 seconds; computation_time= 40.27 seconds
+ --- MASTER 4 (on soctf-pdc-005.d1.comp.nus.edu.sg): total time= 40.88 seconds
+srun: job 678959 queued and waiting for resources
+srun: job 678959 has been allocated resources
+ --- Process 2 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-012.d1.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e0725404/code/CS3210-Labs/L4/mm <size>
+ +++ Process 4 (on soctf-pdc-005.d1.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ --- Process 0 (on soctf-pdc-005.d1.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Received row [512-1023] of matrix A
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 2: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 1: Received matrix B
+ --- WORKER 3: Received matrix B
+ --- WORKER 1: Finished the computations
+ --- WORKER 3: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.66 seconds; computation_time= 32.25 seconds
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-012.d1.comp.nus.edu.sg): communication_time=  0.66 seconds; computation_time= 32.25 seconds
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.60 seconds; computation_time= 40.29 seconds
+ --- WORKER 2: Finished the computations
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-005.d1.comp.nus.edu.sg): communication_time=  0.59 seconds; computation_time= 40.33 seconds
+ --- MASTER 4 (on soctf-pdc-005.d1.comp.nus.edu.sg): total time= 40.93 seconds
