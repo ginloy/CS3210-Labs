@@ -1,0 +1,140 @@
+diff --git a/L4/mm-mpi.cpp b/L4/mm-mpi.cpp
+index 2a10556..f5c4974 100644
+--- a/L4/mm-mpi.cpp
++++ b/L4/mm-mpi.cpp
+@@ -10,6 +10,7 @@
+ #include <unistd.h>
+ #include <time.h>
+ #include <assert.h>
++#include <vector>
+ 
+ int size;
+ int workers;
+@@ -134,6 +135,8 @@ void worker_receive_data(matrix* b, matrix *a)
+ 	int i, row_id;
+ 	int rows_per_worker = size / workers ;
+ 	MPI_Status status;
++	std::vector<MPI_Request>requests(rows_per_worker + size);
++	std::vector<MPI_Status> statuses(requests.size());
+ 	long long before, after;
+ 
+    	
+@@ -144,7 +147,7 @@ void worker_receive_data(matrix* b, matrix *a)
+ 	for (i = 0; i < rows_per_worker; i++)
+ 	{
+ 		row_id = myid * rows_per_worker + i;
+-		MPI_Recv(a->element[i], size, MPI_FLOAT, MASTER_ID, row_id, MPI_COMM_WORLD, &status);
++		MPI_Irecv(a->element[i], size, MPI_FLOAT, MASTER_ID, row_id, MPI_COMM_WORLD, requests.data() + i);
+ 	}
+ 	fprintf(stderr," --- WORKER %d: Received row [%d-%d] of matrix A\n", myid, myid*rows_per_worker, row_id);
+ 	after = wall_clock_time();
+@@ -163,8 +166,9 @@ void worker_receive_data(matrix* b, matrix *a)
+ 	for (i = 0; i < size; i++)
+ 	{
+ 		// fprintf(stderr," --- WORKER %d: Received row [%d] of matrix B\n", myid, i);
+-		MPI_Recv(b->element[i], size, MPI_FLOAT, MASTER_ID, i, MPI_COMM_WORLD, &status);
++		MPI_Irecv(b->element[i], size, MPI_FLOAT, MASTER_ID, i, MPI_COMM_WORLD, requests.data() + rows_per_worker + i);
+ 	}
++	MPI_Waitall(requests.size(), requests.data(), statuses.data());
+ 	fprintf(stderr," --- WORKER %d: Received matrix B\n", myid);
+ 	after = wall_clock_time();
+ 	comm_time += after - before;
+@@ -211,13 +215,16 @@ void worker_send_result(matrix result)
+ 	int i;
+ 	int rows_per_worker = size / workers ;
+ 	long long before, after;
++	std::vector<MPI_Request> requests(rows_per_worker);
++	std::vector<MPI_Status> statuses(requests.size());
+ 
+ 	before = wall_clock_time();
+ 	for (i = 0; i < rows_per_worker; i++)
+ 	{
+ 		int row_id = myid * rows_per_worker + i;
+-		MPI_Send(result.element[i], size, MPI_FLOAT, MASTER_ID, row_id, MPI_COMM_WORLD);
++		MPI_Isend(result.element[i], size, MPI_FLOAT, MASTER_ID, row_id, MPI_COMM_WORLD, requests.data() + i);
+ 	}
++	MPI_Waitall(requests.size(), requests.data(), statuses.data());
+ 	after = wall_clock_time();
+ 	comm_time += after - before;
+ 	fprintf(stderr," --- WORKER %d: Sent the results back\n", myid);
+@@ -269,6 +276,9 @@ void master_distribute(matrix a, matrix b)
+ 	int rows_per_worker = size / workers ;
+ 	int row_start, row_end, row_id;
+ 
++	std::vector<MPI_Request> requests(size + size * workers);
++	std::vector<MPI_Status> statuses(requests.size());
++
+ 	fprintf(stderr," +++ MASTER : Distributing matrix A to workers: workers %d, rows_per_worker %d \n", workers, rows_per_worker);
+ 	// Send the rows to each process
+ 	for (worker_id = 0; worker_id < workers; worker_id++)
+@@ -279,13 +289,13 @@ void master_distribute(matrix a, matrix b)
+ 		for (row_id = row_start; row_id < row_end; row_id++)
+ 		{
+ 			//int row_id = worker_id * rows_per_worker + i;
+-			float row_a_buffer[size];
+-
+-			for (k = 0; k < size; k++)
+-			{
+-				row_a_buffer[k] = a.element[row_id][k];
+-			}
+-			MPI_Send(row_a_buffer, size, MPI_FLOAT, worker_id, row_id, MPI_COMM_WORLD);
++			// float row_a_buffer[size];
++			//
++			// for (k = 0; k < size; k++)
++			// {
++			// 	row_a_buffer[k] = a.element[row_id][k];
++			// }
++			MPI_Isend(a.element[row_id], size, MPI_FLOAT, worker_id, row_id, MPI_COMM_WORLD, requests.data() + row_id);
+ 		}
+ 		fprintf(stderr," +++ MASTER : Finished sending row [%d-%d] of matrix A to process %d\n", 
+ 			row_start, row_end-1, worker_id);
+@@ -295,15 +305,17 @@ void master_distribute(matrix a, matrix b)
+ 	fprintf(stderr," +++ MASTER : Sending matrix B to all workers\n");
+ 	for (i = 0; i < size; i++)
+ 	{
+-		float buffer[size];
+-		for (j = 0; j < size; j++)
+-			buffer[j] = b.element[i][j];
+-
++		// float buffer[size];
++		// for (j = 0; j < size; j++)
++		// 	buffer[j] = b.element[i][j];
++		//
+ 		for (worker_id = 0; worker_id < workers; worker_id++)
+ 		{	
+-			MPI_Send(buffer, size, MPI_FLOAT, worker_id, i, MPI_COMM_WORLD);
++			MPI_Isend(b.element[i], size, MPI_FLOAT, worker_id, i, MPI_COMM_WORLD, requests.data() + size + i * workers + worker_id);
+ 		}
+ 	}
++
++	MPI_Waitall(requests.size(), requests.data(), statuses.data());
+ 	fprintf(stderr," +++ MASTER : Finished sending matrix B to all workers\n");
+ }
+ 
+@@ -322,18 +334,22 @@ void master_receive_result(matrix result)
+ 
+ 	// Matrix a is distributed part by part
+ 	int rows_per_worker = size / workers ;	
++
++	std::vector<MPI_Request> requests(size);
++	std::vector<MPI_Status> statuses(requests.size());
+ 	// Get the results
+ 	for (worker_id = 0; worker_id < workers ; worker_id++)
+ 	{	
+ 		for (i = 0; i < rows_per_worker; i++)
+ 		{
+ 			int row_id = worker_id * rows_per_worker + i;
+-			float buffer[size];
+-			MPI_Recv(buffer, size, MPI_FLOAT, worker_id, row_id, MPI_COMM_WORLD, &status);
+-			for (j = 0; j < size; j++)
+-				result.element[row_id][j] = buffer[j];
++			// float buffer[size];
++			MPI_Irecv(result.element[row_id], size, MPI_FLOAT, worker_id, row_id, MPI_COMM_WORLD, requests.data() + row_id);
++			// for (j = 0; j < size; j++)
++			// 	result.element[row_id][j] = buffer[j];
+ 		}
+ 	}
++	MPI_Waitall(requests.size(), requests.data(), statuses.data());
+ }
+ 
+ /**
