@@ -3,9 +3,15 @@
 #include <math.h>
 #include "timer.hpp"
 
+#ifndef WIDTH
 #define WIDTH      1024
+#endif
+#ifndef HEIGHT
 #define HEIGHT     1024
+#endif
+#ifndef TEMP_TOLERENCE
 #define TEMP_TOLERANCE 0.01
+#endif
 
 double temp[HEIGHT+2][WIDTH+2];
 double temp_prev[HEIGHT+2][WIDTH+2];
