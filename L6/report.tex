@@ -168,7 +168,8 @@ void track_progress(int itr) {
   \clearpage
   \section{Test Scripts}
   Compilation, running, benchmarking, and parsing results were performed with the following
-  \href{https://www.nushell.sh/}{nushell} scripts.
+  \href{https://www.nushell.sh/}{nushell} scripts. Each script was run using the command
+  \texttt{srun -G h100-96 -- nu <script>}.
 
   \subsection{Benchmark script}
   \begin{verbatim}
