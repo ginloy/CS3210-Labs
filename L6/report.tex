@@ -71,9 +71,15 @@ As expected, runtime increases as width / height increases.
 #include <math.h>
 #include "timer.hpp"
 
+#ifndef WIDTH
 #define WIDTH      1024
+#endif
+#ifndef HEIGHT
 #define HEIGHT     1024
+#endif
+#ifndef TEMP_TOLERENCE
 #define TEMP_TOLERANCE 0.01
+#endif
 
 double temp[HEIGHT+2][WIDTH+2];
 double temp_prev[HEIGHT+2][WIDTH+2];
@@ -162,7 +168,7 @@ void track_progress(int itr) {
   \clearpage
   \section{Test Scripts}
   Compilation, running, benchmarking, and parsing results were performed with the following
-  \href{https://www.nushell.sh/}{nushell} scripts
+  \href{https://www.nushell.sh/}{nushell} scripts.
 
   \subsection{Benchmark script}
   \begin{verbatim}
