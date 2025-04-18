@@ -1,0 +1,5 @@
+CompileFlags:
+  Add:
+    - -I/usr/include/c++/11
+    - -I/usr/include/x86_64-linux-gnu/c++/11
+    - -I/home/course/cs3210/shared/spack/opt/spack/linux-ubuntu22.04-zen2/gcc-11.4.0/nvhpc-24.9-qoo3qzatmliga2fyuxsoc6va5iypnkcr/Linux_x86_64/24.9/compilers/include
